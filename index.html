@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TTA Analysis</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+        <h1 class="title">TTA Calculator</h1>
+      <form id="TTA_Inputs">
+        <div class="inputVal sampleWeight">
+          <label for="sampleWeight">Sample Weight</label>
+          <input placeholder="Enter Sample Weight" type="number" name="sampleWeight" id="sampleWeight"  />
+        </div>
+        <div class="inputVal initialVol">
+          <label for="initialVol">Initial Volume of NAOH</label>
+          <input required placeholder="Enter Initial Burette reading" type="number" name="initialVol" id="initialVol"  />
+        </div>
+        <div class="inputVal finalVol">
+          <label for="finalVol">Final Volume of NAOH</label>
+          <input required placeholder="Enter final Burette reading" type="number" name="finalVol" id="finalVol" />
+        </div>
+
+        <div class="calcBtn">
+            <button id="citric">Calculate TTA (0.0641))</button>
+            <button id="lactic">Calculate TTA (0.09))</button>
+        </div>
+        <div class="dispAns">
+
+        </div>
+      </form>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
