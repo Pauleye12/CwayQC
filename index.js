@@ -21,7 +21,7 @@ const calcTTA = (val) => {
     if (typeof volDiff == "number") {
       const Ans = 0.1 * val * volDiff * 100;
         console.log(Ans);
-        $dispAns.innerHTML= `<p>= ${Ans}</p>`
+        $dispAns.innerHTML= `<p>TTA Value = ${Ans}</p>`
       return Ans;
     } else {
       console.log("not a number");
