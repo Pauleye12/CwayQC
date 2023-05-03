@@ -17,7 +17,7 @@ const calcTTA = (val) => {
 
     const $FinalVol = $form.finalVol.value;
 
-    const volDiff = ($InitialVolume - $FinalVol) / $SampleWeight;
+    const volDiff = ($FinalVol - $InitialVolume) / $SampleWeight;
     if (typeof volDiff == "number") {
       const Ans = 0.1 * val * volDiff * 100;
         console.log(Ans);
